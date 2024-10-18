@@ -30,7 +30,7 @@ function App() {
     {nome: "Kaio", dataDeNascimento: "08/08/2004", sexo: "masculino"},
     {nome: "Douglas", dataDeNascimento: "08/08/2008", sexo: "masculino"},
     {nome: "Fábio Negrão", dataDeNascimento: "08/08/2000", sexo: "masculino"},
-    {nome: "Larissa", dataDeNascimento: "08/08/2000", sexo: "feminino"},
+    {nome: "Larissa", dataDeNascimento: "21/03/2006", sexo: "feminino"},
   ]
 
   return (
