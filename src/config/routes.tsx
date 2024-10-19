@@ -9,10 +9,6 @@ import Contato from "../pages/contato";
 import Home from "../pages/home";
 const routes = [
   {
-    path: "/",
-    element: <Root/>
-  },
-  {
     path: "contato/:contatoId/editar",
     element: <EditarContato/>
   },
@@ -29,7 +25,11 @@ const routes = [
 const router = createBrowserRouter(
   createRoutesFromElements(
     (routes.map((route, index) => {
-      return <Route path={route.path} element={route.element} />
+      return (
+        <Route path="/" element={<Root/>}>
+          <Route path={route.path} element={route.element} />
+        </Route>
+      )
     }))
   )
 );
