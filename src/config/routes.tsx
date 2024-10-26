@@ -16,18 +16,17 @@ const routes = [
     path: "contato/:contatoId",
     element: <Contato/>
   },
-  {
-    path: "home",
-    element: <Home/>
-  }
 ]
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     (routes.map((route, index) => {
       return (
-        <Route path="/" element={<Root/>}>
+        <Route>
+          <Route path="/" element={<Home/>}> </Route>
+        <Route path="/admin/" element={<Root/>}>
           <Route path={route.path} element={route.element} />
+        </Route>
         </Route>
       )
     }))
