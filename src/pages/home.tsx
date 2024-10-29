@@ -9,15 +9,17 @@ const Home = () => {
   return (
     <>
     <main>
+      
       <div className="login">
-          <label htmlFor="Email">Email: </label>
-          <TextField id="outlined-basic" label="Email" variant="outlined" required type="email" 
-          name="email" itemID="email" size="small"sx={{margin: "0.5em 0 1em 0"}}/>
-          <label htmlFor="Senha">Senha: </label>
-          <TextField id="outlined-basic" label="Senha" variant="outlined" required type="password" 
-          name="password" itemID="password" size="small" sx={{margin: "0.5em 0"}}/>
-          <label className="label">Esqueceu a senha? </label>
-          <Button variant="contained" color="success" sx={{margin: "0.5em 0", display: "flex"}}>Logar</Button>
+        <h1> Senac Dourados</h1>
+        <label htmlFor="Email">Email: </label>
+        <TextField id="outlined-basic" label="Email" variant="outlined" required type="email" 
+        name="email" itemID="email" size="small"sx={{margin: "0.5em 0 1em 0"}}/>
+        <label htmlFor="Senha">Senha: </label>
+        <TextField id="outlined-basic" label="Senha" variant="outlined" required type="password" 
+        name="password" itemID="password" size="small" sx={{margin: "0.5em 0"}}/>
+        <label className="label">Esqueceu a senha? </label>
+        <Button variant="contained" color="success" sx={{margin: "0.5em 0", display: "flex", width: "25%",}}>Logar</Button>
       </div>
     </main>
     </>
